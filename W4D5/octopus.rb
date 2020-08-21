@@ -20,8 +20,18 @@ def sluggish # O(n^2)
     longest
 end
 
+def merge_sort
+    
+end
+
+
+
+def merge(left,right,&prc)
+
+end
+
 def dominant_octo # O(nlogn)
-    arr.sort
+    
 
     
 end
