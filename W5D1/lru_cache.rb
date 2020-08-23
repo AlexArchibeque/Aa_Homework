@@ -2,7 +2,7 @@ class LRUCache
     
     def initialize(n)
         @length = n
-        @cache = Array.new(4)
+        @cache = Array.new(n)
     end
 
     def count
@@ -20,7 +20,7 @@ class LRUCache
                 self.cache[self.count] = el
                 self.cache << nil
             end
-        elsif self.count != 4
+        elsif self.count != @length
             self.cache[self.count] = el
         else
             self.cache.shift
@@ -38,7 +38,7 @@ class LRUCache
 
 end
 
-johnny_cache = LRUCache.new(4)
+johnny_cache = LRUCache.new(3)
 
 
 johnny_cache.add("I walk the line")
